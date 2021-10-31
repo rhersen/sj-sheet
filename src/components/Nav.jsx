@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-export default function Nav() {
-  const [announcements, setAnnouncements] = useState(0);
-
+export default function Nav({ announcements, setAnnouncements }) {
   return (
     <button
       onClick={async () => {
