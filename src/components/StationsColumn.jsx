@@ -5,8 +5,8 @@ import styles from "./StationsColumn.module.scss";
 
 export default function StationsColumn({ locations }) {
   return (
-    <div className={styles.tc}>
-      <span className="td station">
+    <>
+      <span className={styles.th}>
         prod
         <br />
         dest
@@ -15,12 +15,12 @@ export default function StationsColumn({ locations }) {
       </span>
       {_.map(locations, (loc) =>
         _.map(["Ankomst", "Avgang"], (activity) => (
-          <span key={loc + activity} className="td station">
+          <span key={loc + activity} className={styles.td}>
             {activity.substr(0, 3).toLowerCase()}{" "}
             {(shortLocationName[loc] || loc).substr(0, 14)}
           </span>
         ))
       )}
-    </div>
+    </>
   );
 }

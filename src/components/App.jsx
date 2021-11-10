@@ -5,20 +5,13 @@ import location from "../location.js";
 
 export default function App() {
   const [announcements, setAnnouncements] = useState([]);
-  const [direction, setDirection] = useState("s");
+  const [direction, setDirection] = useState("n");
   const [branch, setBranch] = useState("u");
 
   return (
     <div className="App">
       <Nav announcements={announcements} setAnnouncements={setAnnouncements} />
-      <Sheet
-        announcements={announcements}
-        locations={
-          direction === "n" && branch
-            ? location[branch].slice().reverse()
-            : location[branch]
-        }
-      />
+      <Sheet announcements={announcements} locations={location[branch]} />
     </div>
   );
 }

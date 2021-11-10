@@ -1,4 +1,8 @@
-.tc {
-  display: flex;
-  flex-direction: column;
+.th {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.td {
+  grid-column: 1;
 }

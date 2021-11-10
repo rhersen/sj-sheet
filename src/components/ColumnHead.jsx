@@ -1,5 +1,6 @@
 import React from "react";
 import _ from "lodash";
+import styles from "./ColumnHead.module.scss";
 
 export default function ColumnHead({ announcements, id }) {
   const found = _.find(
@@ -7,7 +8,7 @@ export default function ColumnHead({ announcements, id }) {
     (a) => a.AdvertisedTrainIdent === id && a.ToLocation
   );
   return (
-    <span className="td">
+    <span className={styles.td}>
       {product(found)}
       <br />
       {_.map(_.get(found, "ToLocation"), "LocationName")}

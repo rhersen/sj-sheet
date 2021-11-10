@@ -51,12 +51,12 @@ function getBody({ direction, locations }) {
             <IN name='LocationSignature' value='${locations}' />
             <OR>
              <AND>
-              <GT name='AdvertisedTimeAtLocation' value='$dateadd(-0:10)' />
-              <LT name='AdvertisedTimeAtLocation' value='$dateadd(0:10)' />
+              <GT name='AdvertisedTimeAtLocation' value='$dateadd(-1:30)' />
+              <LT name='AdvertisedTimeAtLocation' value='$dateadd(1:15)' />
              </AND>
              <AND>
-              <GT name='EstimatedTimeAtLocation' value='$dateadd(-0:10)' />
-              <LT name='EstimatedTimeAtLocation' value='$dateadd(0:10)' />
+              <GT name='EstimatedTimeAtLocation' value='$dateadd(-1:30)' />
+              <LT name='EstimatedTimeAtLocation' value='$dateadd(1:15)' />
              </AND>
             </OR>
          </AND>
