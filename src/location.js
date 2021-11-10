@@ -21,7 +21,7 @@ export default {
     "So",
     "Tmö",
     "Ke",
-    "Cst"
+    "Cst",
   ],
   n: [
     "Gä",
@@ -44,7 +44,7 @@ export default {
     "Vha",
     "Srv",
     "Sam",
-    "U"
+    "U",
   ],
   s: [
     "K",
@@ -61,7 +61,7 @@ export default {
     "Mt",
     "My",
     "Lkn",
-    "Bx"
+    "Bx",
   ],
   vt: [
     "K",
@@ -84,7 +84,7 @@ export default {
     "T",
     "Mh",
     "Vä",
-    "Sk"
+    "Sk",
   ],
   sk: ["Sk", "Rmtp", "Ss", "F", "Fby", "Kä", "Hr", "Vgå", "Agg", "A"],
   g: [
@@ -104,7 +104,7 @@ export default {
     "Sel",
     "Gsv",
     "Or",
-    "G"
+    "G",
   ],
   e: [
     "Smn",
@@ -120,7 +120,7 @@ export default {
     "Gt",
     "Bdf",
     "Utp",
-    "Sä"
+    "Sä",
   ],
   v: [
     "Ahm",
@@ -137,7 +137,7 @@ export default {
     "Era",
     "Diö",
     "Dis",
-    "Äh"
+    "Äh",
   ],
   w: [
     "Tun",
@@ -153,24 +153,9 @@ export default {
     "Sg",
     "E",
     "Dat",
-    "Ö"
+    "Ö",
   ],
-  l: [
-    "Stb",
-    "Thl",
-    "Lu",
-    "Flp",
-    "Hjp",
-    "Åkn",
-    "Åk",
-    "Blv",
-    "Al",
-    "Mgb",
-    "M",
-    "Tri",
-    "Hie",
-    "Lnk"
-  ],
+  l: ["Stb", "Thl", "Lu", "Flp", "Hjp"],
   nk: [
     "Hlö",
     "Vhd",
@@ -184,6 +169,28 @@ export default {
     "Kon",
     "Gtå",
     "Åby",
-    "Nr"
-  ]
-}
+    "Nr",
+  ],
+  u: [
+    "Cst",
+    "Ke",
+    "Tmö",
+    "So",
+    "Udl",
+    "Hel",
+    "Kmy",
+    "Sol",
+    "Nvk",
+    "R",
+    "Upv",
+    "Skby",
+    "Rs",
+    "Bra",
+    "Mr",
+    "Myn",
+    "Kn",
+    "Eby",
+    "Säy",
+    "U",
+  ],
+};

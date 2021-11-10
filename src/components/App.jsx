@@ -6,7 +6,7 @@ import location from "../location.js";
 export default function App() {
   const [announcements, setAnnouncements] = useState([]);
   const [direction, setDirection] = useState("s");
-  const [branch, setBranch] = useState("c");
+  const [branch, setBranch] = useState("u");
 
   return (
     <div className="App">

@@ -1,12 +1,13 @@
-import React from "react"
+import React from "react";
 import _ from "lodash";
 import trains from "../trains.js";
 import Column from "./Column.jsx";
+import styles from "./TrainColumns.module.scss";
 
-function TrainColumns({ announcements, locations }) {
+export default function TrainColumns({ announcements, locations }) {
   return (
-    <div className="tr tbody">
-      {_.map(trains(announcements, new Date()), id => (
+    <div className={styles.tr}>
+      {_.map(trains(announcements, new Date()), (id) => (
         <Column
           key={id}
           announcements={announcements}
@@ -15,7 +16,5 @@ function TrainColumns({ announcements, locations }) {
         />
       ))}
     </div>
-  )
+  );
 }
-
-export default TrainColumns

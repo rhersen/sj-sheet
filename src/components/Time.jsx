@@ -1,10 +1,15 @@
 import React from "react";
 import { differenceInMinutes } from "date-fns";
+import styles from "./Time.module.scss";
 
-function Time({ activityType, times, loc, id }) {
+export default function Time({ activityType, times, loc, id, isFirst }) {
   const time = times[loc + id + activityType];
 
-  return <span className="td">{formatTimes(time)}</span>;
+  return (
+    <span className={isFirst ? styles.first : styles.rest}>
+      {formatTimes(time)}
+    </span>
+  );
 
   function delay() {
     if (time && time.TimeAtLocation) {
@@ -22,8 +27,6 @@ function Time({ activityType, times, loc, id }) {
     }
   }
 }
-
-export default Time;
 
 function formatTimes(s) {
   if (!s) return "×";
