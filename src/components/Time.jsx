@@ -6,7 +6,7 @@ export default function Time({ activityType, times, loc, id, isFirst }) {
   const time = times[loc + id + activityType];
 
   return (
-    <span className={isFirst ? styles.first : styles.rest}>
+    <span className={isFirst ? styles.first : styles[activityType]}>
       {formatTimes(time)}
     </span>
   );
