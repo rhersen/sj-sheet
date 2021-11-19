@@ -6,13 +6,9 @@ import styles from "./StationsColumn.module.scss";
 export default function StationsColumn({ locations }) {
   return (
     <>
-      <span className={styles.th}>
-        prod
-        <br />
-        dest
-        <br />
-        train
-      </span>
+      <span className={styles.prod}>prod</span>
+      <span className={styles.dest}>dest</span>
+      <span className={styles.train}>train</span>
       {_.map(locations, (loc) =>
         _.map(["Ankomst", "Avgang"], (activity) => (
           <span key={loc + activity} className={styles.td}>

@@ -8,13 +8,11 @@ export default function ColumnHead({ announcements, id }) {
     (a) => a.AdvertisedTrainIdent === id && a.ToLocation
   );
   return (
-    <span className={styles.td}>
-      {product(found)}
-      <br />
-      {_.map(_.get(found, "ToLocation"), "LocationName")}
-      <br />
-      {id}
-    </span>
+    <>
+      <span className={styles.prod}>{product(found)}</span>
+      <span >{_.map(_.get(found, "ToLocation"), "LocationName")}</span>
+      <span >{id}</span>
+    </>
   );
 }
 
